@@ -20,6 +20,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            padding: 20px;
         }
         h1 {
             font-size: 4rem;
@@ -33,14 +34,20 @@
         }
         .subtext {
             font-size: 1.5rem;
-            margin: 20px 0;
+            margin: 10px 0;
             opacity: 0;
             animation: fadeIn 2s ease-in forwards 1s;
         }
-
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
+        }
+        .cta-container {
+            margin-top: 50px;
+        }
+
+        .cta-container .subtext{
+            margin-bottom: 20px;
         }
         .cta {
             background-color: #ff4500;
@@ -48,7 +55,7 @@
             font-size: 1.2rem;
             font-weight: bold;
             border: none;
-            border-radius:10px;
+            border-radius: 10px;
             color: white;
             text-transform: uppercase;
             cursor: pointer;
@@ -71,10 +78,14 @@
         <h1>DrivenBoy</h1>
         <p class="subtext">Relentless. Obsessive. Unstoppable.</p>
         <p class="subtext">A brand built on pure ambition and hunger for success.</p>
-        <p class="subtext ">🚀 Coming Soon 🚀</p>
-        <a href="https://pruboticsweb.com">
-            <button class="cta">Check out PruboticsWeb</button>
-        </a>
+        <p class="subtext">🚀 Coming Soon 🚀</p>
+        
+        <div class="cta-container">
+            <p class="subtext">Meanwhile, check out one of our ventures:</p>
+            <a href="https://pruboticsweb.com">
+                <button class="cta">Visit PruboticsWeb</button>
+            </a>
+        </div>
     </div>
 </body>
 </html>
