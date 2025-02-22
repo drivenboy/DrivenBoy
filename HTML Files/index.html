@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrivenBoy - Coming Soon</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0a0a0a, #1a1a1a, #2a0a0a);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            animation: glow 1.5s infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #ff5733, 0 0 20px #ff5733, 0 0 30px #ff5733; }
+            to { text-shadow: 0 0 20px #ff4500, 0 0 30px #ff4500, 0 0 40px #ff4500; }
+        }
+        .subtext {
+            font-size: 1.5rem;
+            margin: 20px 0;
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards 1s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .cta {
+            background-color: #ff4500;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius:10px;
+            color: white;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            animation: pulse 5s infinite;
+        }
+        .cta:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px #ff5733;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DrivenBoy</h1>
+        <p class="subtext">Relentless. Obsessive. Unstoppable.</p>
+        <p class="subtext">A brand built on pure ambition and hunger for success.</p>
+        <p class="subtext ">🚀 Coming Soon 🚀</p>
+        <a href="https://pruboticsweb.com">
+            <button class="cta">Check out PruboticsWeb</button>
+        </a>
+    </div>
+</body>
+</html>
