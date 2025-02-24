@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
             text-align: center;
             overflow: hidden;
         }
+
         .container {
             display: flex;
             flex-direction: column;
@@ -22,33 +24,51 @@
             height: 90vh;
             padding: 20px;
         }
+
         h1 {
             font-size: 4rem;
             font-weight: bold;
             text-transform: uppercase;
             animation: glow 1.5s infinite alternate;
         }
+
         @keyframes glow {
-            from { text-shadow: 0 0 10px #ff5733, 0 0 20px #ff5733, 0 0 30px #ff5733; }
-            to { text-shadow: 0 0 20px #ff4500, 0 0 30px #ff4500, 0 0 40px #ff4500; }
+            from {
+                text-shadow: 0 0 10px #ff5733, 0 0 20px #ff5733, 0 0 30px #ff5733;
+            }
+
+            to {
+                text-shadow: 0 0 20px #ff4500, 0 0 30px #ff4500, 0 0 40px #ff4500;
+            }
         }
+
         .subtext {
             font-size: 1.5rem;
             margin: 10px 0;
             opacity: 0;
             animation: fadeIn 2s ease-in forwards 1s;
         }
+
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
+
         .cta-container {
             margin-top: 50px;
         }
 
-        .cta-container .subtext{
+        .cta-container .subtext {
             margin-bottom: 20px;
         }
+
         .cta {
             background-color: #ff4500;
             padding: 15px 30px;
@@ -62,24 +82,46 @@
             transition: transform 0.2s, box-shadow 0.2s;
             animation: pulse 5s infinite;
         }
+
         .cta:hover {
             transform: scale(1.1);
             box-shadow: 0 0 20px #ff5733;
         }
+
         @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
     </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F4QGX7NVY9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-F4QGX7NVY9');
+    </script>
+
 </head>
+
 <body>
     <div class="container">
         <h1>DrivenBoy</h1>
         <p class="subtext">Relentless. Obsessive. Unstoppable.</p>
         <p class="subtext">A brand built on pure ambition and hunger for success.</p>
         <p class="subtext">🚀 Coming Soon 🚀</p>
-        
+
         <div class="cta-container">
             <p class="subtext">Meanwhile, check out one of our ventures:</p>
             <a href="https://pruboticsweb.com">
@@ -88,4 +130,5 @@
         </div>
     </div>
 </body>
+
 </html>
