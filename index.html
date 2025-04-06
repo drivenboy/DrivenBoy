@@ -29,6 +29,7 @@
         h1 {
             font-size: 5rem;
             font-weight: bold;
+            margin: 0px;
             /* text-transform: uppercase; */
             animation: glow 1.5s infinite alternate;
         }
@@ -50,6 +51,13 @@
             animation: fadeIn 2s ease-in forwards 1s;
         }
 
+        .tagline{
+            color: #ff5733;
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 50px;
+        }
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -63,11 +71,19 @@
         }
 
         .cta-container {
-            margin-top: 50px;
+            margin-top: 40px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .cta-container .subtext {
             margin-bottom: 20px;
+        }
+
+        .cta-container a{
+            margin-bottom: 15px;
+            animation: fadeIn 2s ease-in forwards 1s;
         }
 
         .cta {
@@ -119,14 +135,21 @@
 <body>
     <div class="container">
         <h1>DrivenBoy</h1>
-        <p class="subtext">Relentless. Obsessive. Unstoppable.</p>
-        <p class="subtext">A brand built on pure ambition and hunger for success.</p>
-        <p class="subtext">🚀 Coming Soon 🚀</p>
+        <p class="subtext tagline">Driven to help you thrive..</p>
+        <p class="subtext">🚀Under Construction🚀</p>
 
         <div class="cta-container">
-            <p class="subtext">Meanwhile, check out one of our ventures:</p>
+            <p class="subtext">Meanwhile, check out our ventures:</p>
             <a href="https://pruboticsweb.com">
-                <button class="cta">Visit PruboticsWeb</button>
+                <button class="cta">For GYMS</button>
+            </a>
+
+            <a href="https://www.linkedin.com/in/drivenboy/">
+                <button class="cta">For TECHIES</button>
+            </a>
+
+            <a href="https://www.instagram.com/gloryformen">
+                <button class="cta">For IG LOVERS</button>
             </a>
         </div>
     </div>
